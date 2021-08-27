@@ -82,22 +82,22 @@ optional arguments:
 ### Train
 - Train a U-Net model
 ```bash
-python3 main.py -d .runs -r unet2d_runs -p train -m unet2d -e 100
+python3 main.py -d ../runs -r unet2d_runs -p train -m unet2d -e 100
 ```
 
 - Train our GU2Net model
 ```bash
-python3 main.py -d .runs -r GU2Net_runs -p train -m gln -l u2net -e 100
+python3 main.py -d ../runs -r GU2Net_runs -p train -m gln -l u2net -e 100
 ```
 
 - Loading checkpoint
 ```bash
-python3 main.py -d .runs -r GU2Net_runs -p train -m gln -l u2net -e 100 -c CHECKPOINT_PATH
+python3 main.py -d ../runs -r GU2Net_runs -p train -m gln -l u2net -e 100 -c CHECKPOINT_PATH
 ```
 This running results are in the following directory structure.
 
-* .runs 
-    * GU2Net_runs
+* ../runs 
+    * GU2Net\_runs
     	* network_graph.txt
     	* config_train.yaml
     	* config_origin.yaml
@@ -114,12 +114,21 @@ After training, it will automatically run the tests.
 
 Yet you could manually run the tests:
 ```bash
-python3 main.py -d .runs -r GU2Net_runs -p test -m gln -l u2net -c CHECKPOINT_PATH
+python3 main.py -d ../runs -r GU2Net_runs -p test -m gln -l u2net -c CHECKPOINT_PATH
 ```
 
 ### Evaluation
 ```bash
-python3 evaluation.py -i .runs/GU2Net_runs/results/test_epochxxx
+python3 evaluation.py -i ../runs/GU2Net_runs/results/test_epochxxx
+```
+
+### Example
+1. Download checkpoint: [Google Drive](https://drive.google.com/file/d/1yQLjZTCqn_fWzyPPJSRxFycrnIoe4U3U/view?usp=sharing)|[蓝奏云](https://wwa.lanzoui.com/i90Dct8u0jg)
+2. Unzip it in `YOLO_Universal_Anatomical_Landmark_Detection/universal_landmark_detection`
+3. Run commands:
+```shell
+python3 main.py -d ../runs -r GU2Net -p test -C config.yaml -m gln -l u2net -n chest cephalometric hand -c best.pt
+python3 evaluation.py -i ../runs/GU2Net/results/test_epoch067
 ```
 
 ## Citation
