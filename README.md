@@ -1,4 +1,4 @@
-# YOLO_Universal_Anatomical_Landmark_Detection [paper](https://arxiv.org/pdf/2103.04657)
+# YOLO_Universal_Anatomical_Landmark_Detection [arXiv](https://arxiv.org/pdf/2103.04657)
 
 PyTorch implementation for learning a universal model for anatomical landmark detection on mixed datasets.
 ![results](images/results.jpg)
