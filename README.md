@@ -133,11 +133,13 @@ python3 evaluation.py -i ../runs/GU2Net/results/test_epoch067
 
 ## Citation
 ```
-@article{zhu2021you,
-  title={You Only Learn Once: Universal Anatomical Landmark Detection},
-  author={Zhu, Heqin and Yao, Qingsong and Xiao, Li and Zhou, S Kevin},
-  journal={arXiv preprint arXiv:2103.04657},
-  year={2021}
+@inproceedings{zhu2021you,
+  title={You only Learn Once: Universal Anatomical Landmark Detection},
+  author={Zhu, Heqin and Yao, Qingsong and Xiao, Li and Zhou, S. Kevin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={85--95},
+  year={2021},
+  organization={Springer}
 }
 ```
 
