@@ -4,7 +4,7 @@ PyTorch implementation for learning a universal model for anatomical landmark de
 ![results](images/results.jpg)
 
 [You Only Learn Once: Universal Anatomical Landmark Detection](https://github.com/ICT-MIRACLE-lab/YOLO_Universal_Anatomical_Landmark_Detection)  
- [Heqin Zhu](https://github.com/mbinary),  [Qingsong Yao](https://github.com/qsyao), [Li Xiao](http://miracle.ict.ac.cn/?page_id=151&lang=zh), [S.Kevin Zhou](http://miracle.ict.ac.cn/?page_id=151&lang=zh)  
+ [Heqin Zhu](https://github.com/mbinary),  [Qingsong Yao](https://github.com/qsyao), [Li Xiao](http://miracle.ict.ac.cn/?page_id=151&lang=zh), [S. Kevin Zhou](http://miracle.ict.ac.cn/?page_id=151&lang=zh)  
 Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS), Institute of Computing Technology, CAS
 In MICCAI 2021.
 
@@ -40,7 +40,7 @@ Prepare datasets in the following directory structure.
     	* raw
     		* \*.bmp
     * hand
-    	* all.csv
+    	* all.csv # [download here](https://github.com/christianpayer/MedicalDataAugmentationTool-HeatmapRegression/blob/master/hand_xray/hand_xray_dataset/setup/all.csv)
     	* jpg
     	    * \*.jpg
     * chest
