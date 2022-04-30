@@ -23,7 +23,10 @@ class Hand(data.Dataset):
             prefix, 'all.csv'), header=None, index_col=0)
 
         # file index
+        index_set = set(self.labels.index)
         files = [i[:-4] for i in sorted(os.listdir(self.pth_Image))]
+        files = [i for i in files if int(i) in index_set]
+        
         n = len(files)
         train_num = 550  # round(n*0.7)
         val_num = 59  # round(n*0.1)
