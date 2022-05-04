@@ -209,7 +209,7 @@ if __name__ == "__main__":
     dic = {}
     pixel_dic = {}
     if not args.output:
-        output = os.path.join('.eval', args.input.replace('/', '_'))
+        output = os.path.join('./eval', args.input[3:].replace('/', '_'))
     for d in os.listdir(args.input):
         inp = os.path.join(args.input, d)
         if os.path.isdir(inp):
