@@ -16,11 +16,13 @@ class MixIter:
         self.nums = []
         last = 1
         for n in self.acc_length:
-            nms = self.get_shuffle(list(range(last, 1+n)))
+            segs = self.get_segs(list(range(last, 1+n)))
+            self.nums+=segs
             last = n+1
-            self.nums += nms
+        random.shuffle(self.nums)
+        self.nums = [i for sub_li in self.nums for i in sub_li]
 
-    def get_shuffle(self, nums):
+    def get_segs(self, nums):
         li = []
         n = len(nums)
         i, end = 0, n-self.mix_step
@@ -29,8 +31,8 @@ class MixIter:
             i += self.mix_step
         else:
             li.append(nums[i:])
-        random.shuffle(li)
-        return [i for sub_li in li for i in sub_li]
+        return li
+
 
     def findUpper(self, num):
         for i, acc in enumerate(self.acc_length):
