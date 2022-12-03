@@ -29,12 +29,15 @@ class DoubleConv(nn.Module):
         return x
 
 
-class Down(nn.Module):
+class Down(nn.Module):#la photo
     """Downscaling with maxpool then double conv"""
 
     def __init__(self, in_channels, out_channels, task_num=1):
+        #c'est  la classe superieure 
         super().__init__()
-        self.maxpool = nn.MaxPool2d(2)
+        #appliquer filre pour conserver les infos necessaires
+        self.maxpool = nn.MaxPool2d(2) 
+        #
         self.conv = DoubleConv(in_channels, out_channels, task_num=task_num)
 
     def forward(self, x, task_idx=0):

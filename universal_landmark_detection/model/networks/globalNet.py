@@ -18,6 +18,7 @@ class dilatedConv(nn.Module):
     ''' stride == 1 '''
 
     def __init__(self, in_channels, out_channels, kernel_size=3, dilation=1):
+        #heritage 
         super(dilatedConv, self).__init__()
         # f = (kernel_size-1) * d +1
         # new_width = (width - f + 2 * padding)/stride + stride
