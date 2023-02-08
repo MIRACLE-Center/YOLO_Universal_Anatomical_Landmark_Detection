@@ -29,7 +29,7 @@ git clone https://github.com/ICT-MIRACLE-lab/YOLO_Universal_Anatomical_Landmark_
 ```
 
 ### Preparing Datasets
-Download the [head](http://www-o.ntust.edu.tw/~cweiwang/ISBI2015/challenge1/), [hand](https://ipilab.usc.edu/research/baaweb), [chest](https://www.kaggle.com/nikhilpandey360/chest-xray-masks-and-labels) datasets.
+Download the head([link1](37ec464af8e81ae6ebbf), [link2](https://www.kaggle.com/datasets/c34a0ef0cd3cfd5c5afbdb30f8541e887171f19f196b1ad63790ca5b28c0ec93)), [hand](https://ipilab.usc.edu/research/baaweb), [chest](https://www.kaggle.com/nikhilpandey360/chest-xray-masks-and-labels) datasets.
 
 Prepare datasets in the following directory structure.
 
