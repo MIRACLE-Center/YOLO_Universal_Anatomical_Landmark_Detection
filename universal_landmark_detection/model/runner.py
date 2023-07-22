@@ -267,7 +267,7 @@ class Runner(object):
                     'model_name': self.run_name,
                     'model_state_dict': self.model.state_dict(),
                     'optimizer': self.optim,
-                    'scheduler': self.scheduler,
+                    #'scheduler': self.scheduler,
                 }
                 save_name = "{rn}_epoch{epoch:03d}_train{trainloss:.6f}_val{valloss:.6f}.pt".format(
                     rn=self.run_name, epoch=epoch, valloss=val_loss, trainloss=self.train_loss)
