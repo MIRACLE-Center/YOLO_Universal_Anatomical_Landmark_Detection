@@ -141,6 +141,13 @@ python3 evaluation.py -i ../runs/GU2Net/results/test_epoch067
   year={2021},
   organization={Springer}
 }
+@article{zhu2022learning,
+  title={Learning to localize cross-anatomy landmarks in x-ray images with a universal model},
+  author={Zhu, Heqin and Yao, Qingsong and Xiao, Li and Zhou, S Kevin},
+  journal={BME frontiers},
+  year={2022},
+  publisher={AAAS}
+}
 ```
 
 ## Acknowledgments
