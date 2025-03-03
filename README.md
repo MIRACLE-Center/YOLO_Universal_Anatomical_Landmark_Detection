@@ -80,12 +80,7 @@ optional arguments:
 ```
 
 ### Train
-- Train a U-Net model
-```bash
-python3 main.py -d ../runs -r unet2d_runs -p train -m unet2d -e 100
-```
-
-- Train our GU2Net model
+- Train GU2Net model
 ```bash
 python3 main.py -d ../runs -r GU2Net_runs -p train -m gln -l u2net -e 100
 ```
