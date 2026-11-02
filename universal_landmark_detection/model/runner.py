@@ -122,7 +122,7 @@ class Runner(object):
         # get_checkpoint
         if os.path.isfile(self.opts.checkpoint):
             print('loading checkpoint:', self.opts.checkpoint)
-            checkpoint = torch.load(self.opts.checkpoint)
+            checkpoint = torch.load(self.opts.checkpoint, weights_only=True)
             self.start_epoch = checkpoint['epoch'] + 1
             self.model.load_state_dict(checkpoint['model_state_dict'])
             get_learner()
